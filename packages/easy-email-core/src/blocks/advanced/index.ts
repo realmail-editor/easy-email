@@ -22,7 +22,9 @@ import {
   AdvancedGroup,
   AdvancedColumn,
   AdvancedHero,
+  AdvancedTable,
 } from './blocks';
+import { IAdvancedTableData, AdvancedTableBlock } from './generateAdvancedTableBlock';
 
 export const advancedBlocks = {
   [AdvancedType.TEXT]: AdvancedText,
@@ -34,6 +36,7 @@ export const advancedBlocks = {
   [AdvancedType.ACCORDION]: AdvancedAccordion,
   [AdvancedType.CAROUSEL]: AdvancedCarousel,
   [AdvancedType.SOCIAL]: AdvancedSocial,
+  [AdvancedType.TABLE]: AdvancedTable,
 
   [AdvancedType.WRAPPER]: AdvancedWrapper,
   [AdvancedType.SECTION]: AdvancedSection,
@@ -44,3 +47,4 @@ export const advancedBlocks = {
 
 export { Operator, OperatorSymbol };
 export type { AdvancedBlock, ICondition, IConditionGroup, IConditionGroupItem };
+export type { IAdvancedTableData, AdvancedTableBlock };
